@@ -1,0 +1,27 @@
+# /etc/postfix/main.cf
+
+myhostname = localhost
+mydomain = localdomain
+myorigin = $myhostname
+inet_interfaces = all
+inet_protocols = ipv4
+maillog_file = /var/log/mail.log
+
+# Network
+mynetworks = 127.0.0.0/8
+relay_domains =
+relayhost =
+
+# Mailbox
+home_mailbox = Maildir/
+mail_spool_directory = /var/spool/mail
+
+# SMTP
+smtpd_banner = $myhostname ESMTP
+biff = no
+append_dot_mydomain = no
+readme_directory = no
+  
+# GoPhish
+smtpd_relay_restrictions = permit_mynetworks, reject_unauth_destination
+smtpd_recipient_restrictions = permit_mynetworks, reject_unauth_destination
