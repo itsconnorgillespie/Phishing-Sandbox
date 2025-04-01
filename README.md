@@ -1,4 +1,4 @@
-## Phishing Scenario  
+## Phishing Sandbox  
 For the Social Aspects of Cybersecurity (CYB-350) course at [Grand Canyon University](https://gcu.edu), students must create a real-world phishing campaign in an air-gapped sandbox environment. The requirements for this phishing campaign are as follows: create a phishing email, create a landing page, send and receive the phishing email, and document the methodology. To complete this assignment and aid my fellow classmates, I created the following guide to set up a phishing campaign using [GoPhish](https://getgophish.com/) and [Postfix](https://www.postfix.org/).
 
 ### YouTube: Installation & Configuration Guide
